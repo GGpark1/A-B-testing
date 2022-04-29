@@ -1,7 +1,5 @@
 # A/B tests with Statistics and Machine Learning
 
-레퍼런스 : https://www.kaggle.com/code/tammyrotem/ab-tests-with-python/notebook
-
 ## 1. 프로젝트 목표 설정
 
 ### 1) 테스트 진행 전 상황
@@ -143,3 +141,10 @@ A/B 집단의 평가 지표 간의 유의미한 변화가 있는 것을 확인�
 - 새로운 기능을 사용하면 무료 사용자의 등록률을 낮출 수 있지만, 유료 사용자의 등록률을 높일 수는 없을 것으로 보임
 - 새로운 기능이 유료 사용자의 비율을 높일 수 없으므로 **비즈니스 상의 이득이 크다고 볼 수 없음**
 - 새로운 기능을 도입하지 않는 것을 제안함
+
+## 6. 레퍼런스
+
+- A/B tests with python : https://www.kaggle.com/code/tammyrotem/ab-tests-with-python/notebook
+- 오차한계의 개념 및 구현 방법 : https://apcalculus.tistory.com/218
+- 샘플 사이즈의 의미 : https://playinpap.github.io/sample-size-calculator-statistics/
+- 지표에 대한 이해 : Udacity, A/B testing, Choosing and Characterizing Metrics(https://classroom.udacity.com/courses/ud257/lessons/456f424d-0cbc-481c-a0ab-a6217013f46e/concepts/bde635a8-6c93-4f14-8b5b-85387a072a8c)
