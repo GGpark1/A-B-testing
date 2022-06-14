@@ -32,21 +32,21 @@
 ### 1. 데이터 소개
 ![스크린샷 2022-06-14 오후 2 34 03](https://user-images.githubusercontent.com/93904398/173500893-b5c2dc85-3aae-4f4c-b6d1-415e02473af5.png)
 - Date : 데이터 발생 일자
-- Pageviews : 무료 평가판 등록 페이지 view cookies
+- Pageviews : Course overview 페이지 view cookies
 - Clicks : 무료 평가판 등록 버튼 click cookies
 - Enrollments : 무료 평가판 등록자 수
 - Payments : 무료 평가판 종료 후 유료 과정 등록자 수 
 
 ### 2. 불변 지표
 - 두 집단을 편향없이 비교하기 위해 테스트 진행 과정에서 변하지 않고 유지되어야 하는 지표 설정
-  - 코스 개요 페이지의 쿠키 수
-  - 'Start Free Trial' 버튼 클릭 수
+  - Pageviews : Course overview 페이지 view cookies
+  - Clicks : 무료 평가판 등록 버튼 click cookies
 
 ### 3. 평가 지표
 - 새로운 기능의 효과를 확인하기 위해 필요한 지표
-  - Gross Conversion : Start Free Trial 버튼 클릭 수 대비 무료 과정 등록 확률
+  - Gross Conversion : 무료 평가판 등록 버튼 클릭 수 대비 무료 과정 등록 확률
   - Retention : 무료 평가 과정 등록 대비 유료 결제 확률
-  - Net Conversion : Start Free Trial 버튼 클릭 수 대비 유료 결제 등록 확률
+  - Net Conversion : 무료 평가판 등록 버튼 클릭 수 대비 유료 결제 등록 확률
 
 ### 4. 평가 지표에 대해 baseline 설정
 - 평가 지표 상의 유의미한 변화가 있더라도 그 변화가 비즈니스 차원에서 유의미한 수익률을 보장해야 함
@@ -80,7 +80,7 @@
 
 - 전체 데이터에 대해 control과 experiment 데이터의 비율은 0.5이여야 샘플 사이즈에 편향이 없다고 볼 수 있음
 - 코스 개요 페이지의 쿠키 수 : 통제군과 실험군의 비율이 95% 신뢰도에서 0.5 +-0.012 구간 안에 위치하는 것을 확인 -> 귀무가설 채택
-- 'Start Free Trial' 버튼 클릭 수 : 통제군과 실험군의 비율이 95% 신뢰도에서 0.5 +-0.041 구간 안에 위치하는 것을 확인 -> 귀무가설 채택
+- 무료 평가판 등록 버튼 클릭 수 : 통제군과 실험군의 비율이 95% 신뢰도에서 0.5 +-0.041 구간 안에 위치하는 것을 확인 -> 귀무가설 채택
 
 ### 2. Effect size 방법을 활용한 지표 평가
 
@@ -129,8 +129,8 @@
 
 <img width="693" alt="스크린샷 2022-06-07 오전 11 38 47" src="https://user-images.githubusercontent.com/93904398/172284077-31810159-a25d-404a-9f15-cb32d87ee028.png">
 
-- ‘Start Free Trial’ Clicks 수가 많아질 수록 ‘Enrollments’는 감소함
-- 새로운 기능이 Enrollments 감소에 유의미한 역할을 한다고 해석할 수 있음
+- 무료 평가판 등록 Clicks 수가 많아질 수록 ‘Enrollments’는 감소함
+- 새로운 기능이 무료 평가판 등록 감소에 유의미한 역할을 한다고 해석할 수 있음
 
 <img width="692" alt="스크린샷 2022-06-07 오전 11 42 00" src="https://user-images.githubusercontent.com/93904398/172284388-27f9fb76-d577-4f0f-9440-1fb9f0a4ff50.png">
 
